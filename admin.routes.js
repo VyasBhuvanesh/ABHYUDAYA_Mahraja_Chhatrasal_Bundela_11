@@ -1,0 +1,10 @@
+const express = require("express");
+const router = express.Router();
+const adminController = require("../controllers/admin.controller");
+router.get("/complaints", adminController.getAllComplaints);
+router.get("/complaints/status/:status", adminController.getByStatus);
+router.get("/complaints/priority/:priority", adminController.getByPriority);
+router.get("/analytics/recurring", adminController.recurringIssues);
+router.get("/analytics/avg-resolution", adminController.avgResolutionTime);
+router.get("/analytics/overdue", adminController.overdueComplaints);
+module.exports = router;
