@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Residence Login</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="login-container">
+
+        <!-- Title -->
+        <h2 class="title">Indian Institute Of Information Technology Hostel</h2>
+
+        <!-- Role Selection -->
+        <div class="role-toggle">
+            <button class="role-btn active" id="studentBtn">Student</button>
+            <button class="role-btn" id="wardenBtn">Warden</button>
+        </div>
+
+        <!-- Login Form -->
+        <form class="login-form">
+
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="userId" 
+                    name="userId" 
+                    placeholder="ID Number" 
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Password" 
+                    required
+                >
+            </div>
+
+            <button type="submit" class="login-btn">LOGIN</button>
+
+        </form>
+
+        <!-- Forgot Password -->
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <!-- Sign Up -->
+        <div class="signup">
+            <a href="#">Don't have an account? <span>Sign Up</span></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
