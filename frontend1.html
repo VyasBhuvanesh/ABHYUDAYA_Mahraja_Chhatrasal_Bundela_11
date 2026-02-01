@@ -3,62 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>University Residence Login</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- External JS -->
+    <link rel="stylesheet" href="maincss.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
     <div class="login-container">
 
-        <!-- Title -->
-        <h2 class="title">Indian Institute Of Information Technology Hostel</h2>
+        <h2 class="login-title">UNIVERSITY RESIDENCE LOGIN</h2>
 
-        <!-- Role Selection -->
-        <div class="role-toggle">
-            <button class="role-btn active" id="studentBtn">Student</button>
-            <button class="role-btn" id="wardenBtn">Warden</button>
+        <div class="role-selection">
+            <button id="studentBtn" class="role-btn active">Student</button>
+            <button id="wardenBtn" class="role-btn">Warden</button>
         </div>
 
-        <!-- Login Form -->
         <form class="login-form">
+            <input type="hidden" id="role" value="student">
 
             <div class="input-group">
-                <input 
-                    type="text" 
-                    id="userId" 
-                    name="userId" 
-                    placeholder="ID Number" 
-                    required
-                >
+                <input type="text" placeholder="Username" required>
             </div>
 
             <div class="input-group">
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    placeholder="Password" 
-                    required
-                >
+                <input type="password" placeholder="Password" required>
             </div>
 
-            <button type="submit" class="login-btn">LOGIN</button>
-
+            <button type="submit" class="login-button">LOGIN</button>
         </form>
-
-        <!-- Forgot Password -->
-        <div class="forgot-password">
-            <a href="#">Forgot Password?</a>
-        </div>
-
-        <!-- Sign Up -->
-        <div class="signup">
-            <a href="#">Don't have an account? <span>Sign Up</span></a>
-        </div>
 
     </div>
 

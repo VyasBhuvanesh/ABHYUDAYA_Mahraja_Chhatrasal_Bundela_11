@@ -1,40 +1,35 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
-/* Page Background */
 body {
     height: 100vh;
-    background: radial-gradient(circle at top, #f3f3f3, #d9d9d9);
+    background: radial-gradient(circle at top, #f3f3f3, #dcdcdc);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Main Card */
 .login-container {
     width: 380px;
-    padding: 30px 28px;
+    padding: 30px;
     border-radius: 22px;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
-/* Title */
-.title {
+
+.login-title {
     font-size: 20px;
-    font-weight: 600;
-    color: #1f2937;
     margin-bottom: 25px;
+    font-weight: 600;
 }
 
-/* Role Toggle */
-.role-toggle {
+.role-selection {
     display: flex;
     background: #e5e7eb;
     border-radius: 30px;
@@ -45,7 +40,7 @@ body {
 .role-btn {
     flex: 1;
     border: none;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 14px;
     border-radius: 30px;
     cursor: pointer;
@@ -55,10 +50,9 @@ body {
 
 .role-btn.active {
     background: linear-gradient(135deg, #7c3aed, #5b21b6);
-    color: #ffffff;
+    color: white;
 }
 
-/* Input Fields */
 .input-group {
     margin-bottom: 16px;
 }
@@ -66,62 +60,19 @@ body {
 .input-group input {
     width: 100%;
     padding: 12px 15px;
-    font-size: 14px;
     border-radius: 12px;
-    border: 1px solid #cbd5f5;
-    outline: none;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
 }
 
-.input-group input::placeholder {
-    color: #9ca3af;
-}
-
-.input-group input:focus {
-    border-color: #6366f1;
-}
-
-/* Login Button */
-.login-btn {
+.login-button {
     width: 100%;
     padding: 12px;
-    margin-top: 10px;
     border: none;
     border-radius: 14px;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
-    color: #ffffff;
+    color: white;
     background: linear-gradient(135deg, #3b82f6, #2563eb);
+    cursor: pointer;
 }
-
-.login-btn:hover {
-    opacity: 0.95;
-}
-
-/* Forgot Password */
-.forgot-password {
-    margin-top: 18px;
-    font-size: 14px;
-}
-
-.forgot-password a {
-    text-decoration: none;
-    color: #2563eb;
-}
-
-/* Sign Up */
-.signup {
-    margin-top: 22px;
-    font-size: 14px;
-}
-
-.signup a {
-    text-decoration: none;
-    color: #1f2937;
-}
-
-.signup span {
-    color: #2563eb;
-    font-weight: 600;
-}
-
